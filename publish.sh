@@ -3,7 +3,7 @@
 set -e
 IPA="$1"; cd "$(dirname "$0")"
 TAG="build-$(date +%Y%m%d-%H%M)"
-gh release create "$TAG" "$IPA#Overcast.ipa" --repo DuckyMcGucky/overcast-builds --title "Overcast $TAG" --notes "Ad hoc build" >/dev/null
+cp "$IPA" /tmp/Overcast.ipa; gh release create "$TAG" /tmp/Overcast.ipa --repo DuckyMcGucky/overcast-builds --title "Overcast $TAG" --notes "Ad hoc build" >/dev/null
 URL="https://github.com/DuckyMcGucky/overcast-builds/releases/download/$TAG/Overcast.ipa"
 cat > manifest.plist <<P
 <?xml version="1.0" encoding="UTF-8"?>
