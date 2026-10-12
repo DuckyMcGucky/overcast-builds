@@ -1,0 +1,6 @@
+- New onboarding: an animated welcome, an airplane pick with Private Pilot included, and a short tour that spotlights the real buttons on your dashboard (Resume, lessons and quiz, Radio, Mock oral, and your balances) with an arrow. You can replay it any time from Settings.
+- Tester builds now include the Debug menu, so you have exactly the same build as Taylor.
+- Debug "Reset all" now also resets mock orals, radio, and Explains back to 1 / 30 / 150.
+- The top bar adapts to your iPad size and text size: full labels when they fit, icons when they don't, plus a More menu.
+- Accessibility: the app works at the largest text sizes, and VoiceOver reads the tour.
+- Fix: replaying the tour never changes your Resume spot or marks lessons as done.
